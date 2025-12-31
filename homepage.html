@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuickBuy | Home</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Quick<span>Buy</span></div>
+      <ul class="nav-links">
+        <li><a href="homepage.html" class="active">🏠Home</a></li>
+        <li><a href="products.html">📱Products</a></li>
+        <li><a href="cart.html">🛒Cart (<span id="cartCount">0</span>)</a></li>
+        <li><a href="search.html">🔎Search</a></li>
+        <li><a href="register.html">📄Register</a></li>
+        <li><a href="contact.html">📞Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section with animation -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">Welcome to <span>QuickBuy</span></h1>
+      <p class="hero-subtitle">Discover the best products at amazing prices!</p>
+      <a href="products.html" class="btn hero-btn">Shop Now</a>
+    </div>
+    <div class="hero-image">
+      <img src="https://i.pinimg.com/originals/e0/73/39/e07339b97fcba2872a07874e1e6a1828.gif" alt="Shopping Hero" class="animate-float" height="200">
+    </div>
+  </section>
+
+  <!-- Featured Products Preview with hover effect -->
+  <section class="featured">
+    <h2 class="section-title">Featured products</h2>
+    <div class="product-grid">
+      <div class="product-card animate-card" data-name="Smart Watch">
+        <img src="https://media.istockphoto.com/photos/smartwatch-picture-id469328286?k=20&m=469328286&s=612x612&w=0&h=vtEyrm6aOlka7JtDOhOVbdP9eRVeoZbJ3HLP-Trmrl8=" height="200"/>
+        <h3>Smart Watch</h3>
+        <p>₹2999</p>
+        <a href="#" class="btn add-to-cart">Add to Cart</a>
+      </div>
+
+      <div class="product-card animate-card" data-name="Laptop">
+        <img src="https://i5.walmartimages.com/asr/69056846-b8a1-497a-b4f5-6172ab54b35d.a2102861007e11c433c127f2b63b038a.jpeg" alt="Laptop">
+        <h3>Laptop</h3>
+        <p>₹42999</p>
+        <a href="#" class="btn add-to-cart">Add to Cart</a>
+      </div>
+
+      <div class="product-card animate-card" data-name="Sneakers">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.LwtzYNJJIDa0QHfsHFi2jgHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Sneakers">
+        <h3>Sneakers</h3>
+        <p>₹1999</p>
+        <a href="#" class="btn add-to-cart">Add to Cart</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 . All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
