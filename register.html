@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quick Buy | Register</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Quick<span>Buy</span></div>
+      <ul class="nav-links">
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="cart.html">Cart (<span id="cartCount">0</span>)</a></li>
+        <li><a href="search.html">Search</a></li>
+        <li><a href="register.html" class="active">Register</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="register-page">
+    <div class="register-container animate-card">
+      <h2>Create Your Account</h2>
+      <form id="registerForm">
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="password" name="confirmPassword" placeholder="Confirm Password" required>
+        <button type="submit" class="btn">Register</button>
+      </form>
+      <p>Already have an account? </p><p><a href="homepage.html">Login here</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Quick Buy. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    const form = document.getElementById("registerForm");
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Registration successful! ");
+      form.reset();
+    });
+  </script>
+</body>
+</html>
